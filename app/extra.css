@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+nav{
+  position: sticky;
+  top:0;
+  width: 100%;
+  background: #001b31da !important;
+  opacity: 85%;
+}
+
+
+body{
+  background-image: url("/bg.gif");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: bottom, center;
+}
