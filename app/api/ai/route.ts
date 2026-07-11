@@ -44,22 +44,23 @@
 
 // }
 
-
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
+    const { message } = await req.json();
+
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const result = await model.generateContent(message);
+    const response = await result.response;
     
-    // We will bypass the model initialization and try to get the models list differently
-    // If this fails, your API key is definitely the issue.
-    const models = await genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    
-    return NextResponse.json({ status: "Success" });
+    // Return the actual reply from Gemini
+    return NextResponse.json({ reply: response.text() });
   } catch (error: any) {
-    // Log the full error to Vercel Logs
-    console.error("FULL ERROR:", JSON.stringify(error, null, 2));
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("API Error:", error);
+    return NextResponse.json({ error: "Failed to generate content" }, { status: 500 });
   }
 }
