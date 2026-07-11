@@ -16,3 +16,20 @@ body{
   background-size: cover;
   background-position: bottom, center;
 }
+
+
+#srch{
+  width:80vw;
+  height: 1cm;
+  border: solid #053358e7 3px;
+  margin-top:10vh;
+  margin-left:5vw;
+  margin-right:5vw;
+  border-radius: 10px;
+    background: #001b31da !important;
+  opacity: 85%;
+  color: whitesmoke;
+  padding: 20px;
+
+
+}

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,8 +23,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "next-env.d.ts",
@@ -28,7 +35,14 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "pages/_app.jsx", "midwar/connect.js", "pages/api/signup.js", "models/user.js"  ],
-  "exclude": ["node_modules"]
+    "**/*.mts",
+    "pages/_app.jsx",
+    "midwar/connect.js",
+    "pages/api/signup.js",
+    "models/user.js",
+    "next.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
