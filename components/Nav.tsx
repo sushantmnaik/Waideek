@@ -19,7 +19,7 @@ const Nav = () => {
 
 
 
-    <nav className="nav text-gray-400  body-font md:flex-row md:ml-auto md:flex md:h-4">
+    <nav className="nav text-gray-400  body-font md:flex-row md:ml-auto md:flex md:h-4 container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
         <Image id="logo" className="flex title-font font-medium items-center text-blue-300 mb-4 md:mb-0 md:w-20" src="/logo.png" alt="Logo" width={100} height={50} priority style={{ width: 'auto', height: 'auto' }} />
@@ -27,25 +27,25 @@ const Nav = () => {
         
 <div className="end md:ml-auto flex flex-wrap items-center text-base justify-center">
 
-         <Link href="/" className="fl mr-5 hover:text-white inline-flex items-center border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0 md:width-20px">
+         <Link href="/" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0 md:width-20px">
         <button className="mr-1 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1  opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
     <HiHome className="cursor-pointer flex-1"/>
     Home
         </button>
     </Link>
-         <Link href="/about" className="fl mr-5 hover:text-white inline-flex items-center border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
+         <Link href="/about" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
         <button className="mr-1 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1  opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
     {/* <CgFileDocument className="cursor-pointer flex-1"/> */}
     About
         </button>
     </Link>
-         <Link href="/contact" className="fl mr-5 hover:text-white inline-flex items-center border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
+         <Link href="/contact" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
          <button className="mr-1 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1  opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
     <MdContactMail className="cursor-pointer flex-1"/>
     Contact
          </button>
     </Link>
-         <Link href="/explore" className="fl mr-5 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
+         <Link href="/explore" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 md:mr-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
          <button className="mr-1 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1  opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
     
     Explore 
