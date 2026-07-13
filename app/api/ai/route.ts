@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+// import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 // const GEMINI_API_KEY = process.env.GEMINI_API_KEY
