@@ -32,8 +32,8 @@ const [input, setInput] = useState('');
   return (
     <>
     <input type="search" name="srch" id="srch" placeholder='What do you want to ask...' value={input} onChange={(e) => setInput(e.target.value)} /> 
-    <button type="submit" onClick={sendMessage}>Search</button>
-    {messages.map((m, i) => <p key={i}><strong>{m.role}:</strong> {m.text}</p>)}
+    <button type="submit" onClick={sendMessage} className="fl mr-5 hover:text-white inline-flex items-center border-2 py-1 px-1 bg-gray-600 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 cursor-pointer md:mt-0" >Search</button>
+    {messages.map((m, i) => <p key={i} className='bg-amber-100 opacity-20 border-4 border-blue-400 p-2'><strong className="col-end-1 bold ">{m.role}:</strong> {m.text}</p>)}
 
     </>
   )
