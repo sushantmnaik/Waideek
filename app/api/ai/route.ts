@@ -1,8 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY
-
+// const GEMINI_API_KEY = process.env.GEMINI_API_KEY
 
 
 
@@ -13,16 +12,19 @@ export async function POST(req: Request) {
     if (!process.env.GEMINI_API_KEY) {
       throw new Error("GEMINI_API_KEY is missing");
     }
-    
-    var input = message
-  await const ai = new GoogleGenAI({apiKey: GEMINI_API_KEY});
-    const interaction = ai.interactions.create({
-    model: 'gemini-3.5-flash',
-    contents: input,
-  })
-  NextResponse.json({ response: interaction });
-  }catch (error: any) {
-    console.error("API Error:", error );
+
+    // Initialize the new client
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
+    // Use the models.generateContent method
+    const response = await ai.models.generateContent({
+      model: "gemini-1.5-flash", // Ensure this model is supported by your key
+      contents: message,
+    });
+
+    return NextResponse.json({ reply: response.text });
+  } catch (error: any) {
+    console.error("API Error:", error);
     return NextResponse.json({ error: "Failed to generate content" }, { status: 500 });
   }
 
