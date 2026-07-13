@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
     // Use the models.generateContent method
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash", // Ensure this model is supported by your key
+      model: "gemini-2.5-flash", // Ensure this model is supported by your key
       contents: message,
     });
 
