@@ -1,6 +1,8 @@
 <div align="center">
 <img src="https://waideek.vercel.app/favicon.ico" width="120" alt="Kumpix Logo"/>
 <br/>
+
+
 # 🤖 Waideek
 
 ### AI-Powered Chat Assistant for Everyone
