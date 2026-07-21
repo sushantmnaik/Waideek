@@ -81,6 +81,25 @@ const Banner = () => {
   const [messages, setMessages] = useState<{role: string, text: string}[]>([]);
   const inprf = useRef<HTMLInputElement>(null);
 
+  async function sendMessage() {
+    if (!input.trim()) return;
+
+    // Add user message to UI
+    setMessages(prev => [...prev, { role: 'user', text: input }]);
+    
+    // Call your own internal API
+    const res = await fetch('/api/ai', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: input }),
+    });
+    
+    const data = await res.json();
+    setMessages(prev => [...prev, { role: 'ai', text: data.reply }]);
+    setInput('');
+  };
+
+
   useEffect(() => {
     const inp = inprf.current;
     if (!inp) return;
@@ -100,24 +119,7 @@ const Banner = () => {
     };
   }, []);
 
-  const sendMessage = async () => {
-    if (!input.trim()) return;
-
-    // Add user message to UI
-    setMessages(prev => [...prev, { role: 'user', text: input }]);
-    
-    // Call your own internal API
-    const res = await fetch('/api/ai', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: input }),
-    });
-    
-    const data = await res.json();
-    setMessages(prev => [...prev, { role: 'ai', text: data.reply }]);
-    setInput('');
-  };
-
+  
   return (
     <>
       <input 
