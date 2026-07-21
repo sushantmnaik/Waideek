@@ -155,7 +155,7 @@ import '../app/extra.css'
 import { useState } from 'react';
 
 const Banner = () => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState( '');
   const [messages, setMessages] = useState<{role: string, text: string}[]>([]);
 
   const sendMessage = async (e: React.FormEvent) => {

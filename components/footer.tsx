@@ -24,7 +24,7 @@ const Footer = () => {
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
     {dataset.map((app, index) => {
       return(
-<Link href={app.link} className="link rounded m-2 hover:text-amber-50 cursor-pointer">
+<Link href={app.link} className="link rounded m-2 hover:text-amber-50 cursor-pointer flex flex-wrap ">
 {app.title}
 </Link>
   )
