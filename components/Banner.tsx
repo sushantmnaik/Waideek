@@ -5,20 +5,29 @@ import '../app/extra.css'
 
 
 // import React from 'react'
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const Banner = () => {
 const [input, setInput] = useState('');
   const [messages, setMessages] = useState<{role: string, text: string}[]>([]);
+const inprf= useRef<HTMLInputElement>(null);
 
-  var inp = document.getElementById("srch")
-  inp?.addEventListener("keypress",(e)=>{
+useEffect(()=>{
+  const inp =inprf.current
+  if (!inp) return;
+
+  inp.addEventListener("keypress",(e)=>{
     if (e.key === "Enter"){
       console.log(e)
+      sendMessage()
     }
   }
+)
+
+})
+
   
-  )
+  
 
   const sendMessage = async () => {
     if (!input.trim()) return;
