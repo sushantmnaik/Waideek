@@ -19,7 +19,7 @@ const Nav = () => {
 
 
 
-    <nav className="nav text-gray-400  body-font md:flex-row md:ml-auto md:flex md:h-4 container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <nav className="nav text-gray-400  body-font md:flex-row md:ml-auto md:flex md:h-4 container px-5 py-8  flex items-center sm:flex-row flex-col">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
         <Image id="logo" className="flex title-font font-medium items-center text-blue-300 mb-4 md:mb-0 md:w-20" src="/logo.png" alt="Logo" width={100} height={50} priority style={{ width: 'auto', height: 'auto' }} />
