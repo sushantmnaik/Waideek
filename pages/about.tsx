@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import 'github-markdown-css/github-markdown.css';
 
 interface AboutProps {
@@ -39,7 +40,9 @@ export default function About({ markdownContent }: AboutProps) {
       <hr/>
       <main className="max-w-4xl mx-auto px-4 py-12">
         <article className="markdown-body" style={{ background: 'transparent' }}>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        >
           {markdownContent}
         </ReactMarkdown>
       </article>
