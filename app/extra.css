@@ -7,6 +7,7 @@ nav{
   background: #001b31da !important;
   opacity: 85%;
   margin: 0 !important;
+  z-index: 50 !important;
 }
 
 
