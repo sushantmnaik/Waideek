@@ -50,11 +50,12 @@ Whether you're learning something new, solving coding problems, brainstorming id
 
 # ✨ Features
 
+- 🌙 Dark Mode
+- 🔓 No Login Required
+- 🆓 Completely Free to Use
 - 🤖 Powered by Google Gemini AI
 - 💬 Natural AI conversations
 - ⚡ Fast response generation
-- 🔓 No Login Required
-- 🆓 Completely Free to Use
 - 📱 Fully Responsive Design
 - 💻 Works on Desktop, Tablet & Mobile
 - 🎨 Modern and Minimal UI
@@ -161,23 +162,8 @@ npm run build
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots of the application here.
-
-```text
-screenshots/
-├── home.png
-├── chat.png
-├── mobile.png
-└── desktop.png
-```
-
----
-
 # 🔮 Roadmap
 
-- 🌙 Dark Mode
 - 📂 Chat History
 - 📎 File Upload Support
 - 🎤 Voice Input
