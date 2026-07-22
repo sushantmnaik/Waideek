@@ -31,7 +31,7 @@ export default function About({ markdownContent }: AboutProps) {
   
   return (
     <>
-    <body className="body">
+    <body className="body bg-gray-900">
       
       <h2>About</h2>
       <h3>Waideek is an AI powered chat responser for all your queries and problems. It is an Gemini Powered website where you can chat with ai, fearlessly without any tension of login or signup and all at free of cost.</h3>
