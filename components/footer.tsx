@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="text-gray-400 bg-gray-900 body-font">
   <div className=" px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-      <Image id="logo" className="flex title-font font-medium items-center text-blue-300 mb-4 md:mb-0 md:w-20" src="/logo.png" alt="Logo" width={80} height={80} priority style={{ width: 'auto', height: 'auto' }} />
+      <Image id="logo" className="flex title-font font-medium items-center text-blue-300 mb-4 md:mb-0 md:w-20" src="/logo.png" alt="Logo" width={40} height={40} priority style={{  height: 'auto' }} />
       <span className="ml-3 text-xl">
       <Image id="title" src="/waideek.png" alt="Waideek" width={100} height={80} priority style={{ width: 'auto', height: 'auto' }} />
       </span>

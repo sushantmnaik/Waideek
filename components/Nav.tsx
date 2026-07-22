@@ -23,7 +23,7 @@ const Nav = () => {
         <div className="flex flex-wrap  flex-col md:flex-row items-center">
 
         <Image id="logo" className="flex title-font font-medium items-center text-blue-300 mb-4 md:mb-0 md:w-20" src="/logo.png" alt="Logo" width={50} height={40} priority style={{ width: 'auto', height: 'auto' }} />
-        <Image id="title" src="/waideek.png" alt="Waideek" width={200} height={100} priority style={{ width: 'auto', height: 'auto' }} />
+        <Image id="title" src="/waideek.png" alt="Waideek" width={100} height={40} priority style={{ width: 'auto' }} />
         
 <div className="end md:ml-auto flex flex-wrap items-center text-base justify-center inset-e-full col-end-13 right-0">
 
