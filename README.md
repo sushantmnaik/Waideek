@@ -11,15 +11,28 @@ Chat with AI instantly — no login, no signup, completely free.
 
 🌐 **Live Demo:** https://waideek.vercel.app/
 
+<br/>
+
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+<br/>
+
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+
+<br/>
+
 ![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+
+<br/>
+
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<br/>
+
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)
 
-![GitHub stars](https://img.shields.io/github/stars/sushantmnaik/Waideek?style=social)
-![GitHub forks](https://img.shields.io/github/forks/sushantmnaik/Waideek?style=social)
-![GitHub issues](https://img.shields.io/github/issues/sushantmnaik/Waideek)
+<br/>
+
 
 </div>
 

@@ -45,7 +45,7 @@ const Nav = () => {
     Contact
          </button>
     </Link>
-         <Link href="/explore" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 md:mr-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
+         <Link href="https://github.com/sushantmnaik/Waideek" className="fl mr-5 hover:text-white flex title-font font-medium items-center md:justify-start justify-center text-white border-0 py-1 px-1 md:mr-1 bg-gray-600 opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
          <button className="mr-1 hover:text-white inline-flex items-center border-0 py-1 px-1 md:mr-1  opacity-100 focus:outline-none hover:bg-gray-5\00 rounded text-base mt-4 cursor-pointer md:mt-0">
     
     Explore 
