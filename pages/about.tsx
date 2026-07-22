@@ -13,10 +13,12 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import 'github-markdown-css/github-markdown.css';
 
+interface AboutProps {
+  markdownContent: string;
+}
 
 
-
-export default function About() { 
+export default function About({ markdownContent }: AboutProps) { 
   // var link = window.location.pathname;
   
   // fetch(`./api/follow?app=Facebook`).then(res => res.json()).then(data => {
@@ -25,8 +27,6 @@ export default function About() {
 
   var dataset = Object.values(data);
   
-  const filePath = path.join(process.cwd(), 'README.md');
-  const markdownContent = fs.readFileSync(filePath, 'utf8');
   
   return (
     <>
@@ -73,4 +73,17 @@ export default function About() {
     </body>
     </>
   );
+}
+
+
+
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'README.md');
+  const markdownContent = fs.readFileSync(filePath, 'utf8');
+
+  return {
+    props: {
+      markdownContent,
+    },
+  };
 }
