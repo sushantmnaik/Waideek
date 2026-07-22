@@ -17,9 +17,6 @@ const Footer = () => {
     </a>
 
 
-    <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©Waideek
-      <a href="https://x.com/sushant_naik_" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Sushant Naik</a>
-    </p>
 
     <span className="sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start flex flex-wrap">
     {dataset.map( ( app, index ) => {
