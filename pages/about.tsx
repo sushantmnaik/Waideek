@@ -31,7 +31,7 @@ export default function About({ markdownContent }: AboutProps) {
   
   return (
     <>
-    <body className="body bg-gray-900">
+    <body className="bg-gray-900">
       
       <h2>About</h2>
       <h3>Waideek is an AI powered chat responser for all your queries and problems. It is an Gemini Powered website where you can chat with ai, fearlessly without any tension of login or signup and all at free of cost.</h3>
@@ -56,7 +56,7 @@ export default function About({ markdownContent }: AboutProps) {
       {dataset.map((app, index) => {
         
         return (
-          <div className="followbox bg-blue-500 bg-opacity-50 rounded m-2 shadow-2xl lg:w-1/4 md:w-1/2 p-1 w-full" key={index}>
+          <div className="followbox bg-grey-900 bg-opacity-50 rounded m-2 shadow-2xl lg:w-1/4 md:w-1/2 p-1 w-full" key={index}>
             <Link href={app.link} className="link rounded ">
              <span className="text-blue-700 title-font text-lg font-medium">
                 {app.title}
